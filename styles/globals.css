@@ -1,16 +1,71 @@
-html,
+:root {
+	--bg: rgb(1, 29, 1);
+	--fr: rgb(251, 251, 251);
+	--or: rgb(255, 128, 0);
+	--orf: rgb(254, 150, 47);
+}
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	position: relative;
+	height: 98vh;
+	display: flex;
+	justify-content: center;
+	background-color: var(--bg);
+	color: var(--fr);
+}
+body::before {
+	content: "";
+	background-image: url("../public/mapa.jpg");
+	position: absolute;
+	background-size: cover;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	opacity: 0.6;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+h1 {
+	font-size: 3rem;
+	text-align: center;
 }
 
-* {
-  box-sizing: border-box;
+h2 {
+	font-size: 2rem;
+	text-align: center;
+}
+button {
+	border: white solid 1px;
+	background-color: var(--or);
+	font-size: 2rem;
+	padding: 1vw;
+}
+button:hover {
+	background-color: var(--orf);
+	cursor: pointer;
+}
+
+.introButt {
+	text-align: center;
+	font-size: 6rem;
+	border-radius: 1vw;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.blackbox {
+	position: fixed;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 40%;
+	height: 90vh;
+	background-color: rgba(0, 0, 0, 0.518);
+	border-radius: 5vw;
+	margin: 1vw 0;
+}
+.smallInfo {
+	position: fixed;
+	bottom: 1%;
+	right: 1%;
 }
