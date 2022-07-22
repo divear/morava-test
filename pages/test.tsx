@@ -56,6 +56,7 @@ function test() {
 		setAnswer(questions.questions[level].a);
 	}, [level]);
 
+	const rn = [0, 1, 2, 3];
 	return (
 		<div>
 			<div className="mapa">
@@ -66,16 +67,16 @@ function test() {
 				<h1>{question}</h1>
 				<div className="answers">
 					<button onClick={() => setLevel(level + 1)}>
-						{answer[0]}
+						{"1. " + answer[rn[0]]}
 					</button>
 					<button onClick={() => setLevel(level + 1)}>
-						{answer[1]}
+						{"2. " + answer[rn[1]]}
 					</button>
 					<button onClick={() => setLevel(level + 1)}>
-						{answer[2]}
+						{"3. " + answer[rn[2]]}
 					</button>
 					<button onClick={() => setLevel(level + 1)}>
-						{answer[3]}
+						{"4. " + answer[rn[3]]}
 					</button>
 				</div>
 			</div>

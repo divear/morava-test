@@ -49,7 +49,7 @@ button:hover {
 
 .introButt {
 	text-align: center;
-	font-size: 6rem;
+	font-size: 6rem !important;
 	border-radius: 1vw;
 	position: fixed;
 	left: 50%;
