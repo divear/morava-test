@@ -1,0 +1,9 @@
+{
+	"mesta": ["Praha", "Brno", "Ostrava", "Ústí"],
+	"questions": [
+		{
+			"q": "Co jsi měl dnes k obědu?",
+			"a": ["Trdelník", "Bryndza", "Uhlí", "Herák"]
+		}
+	]
+}

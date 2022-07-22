@@ -9,6 +9,7 @@ const Home: NextPage = () => {
 				<h1>Morava test,</h1>
 				<h2>jak moc jsi z moravy?</h2>
 				<button
+					onClick={() => (location.href = "/test")}
 					onMouseEnter={() => setOtazka("Vodkať sem?")}
 					className="introButt"
 				>

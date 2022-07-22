@@ -56,9 +56,17 @@ button:hover {
 }
 .blackbox {
 	position: fixed;
-	left: 50%;
-	transform: translate(-50%, 0);
+	right: 2%;
 	width: 40%;
+	height: 90vh;
+	background-color: rgba(0, 0, 0, 0.518);
+	border-radius: 5vw;
+	margin: 1vw 0;
+}
+.mapa {
+	position: fixed;
+	left: 2%;
+	width: 50%;
 	height: 90vh;
 	background-color: rgba(0, 0, 0, 0.518);
 	border-radius: 5vw;
@@ -68,4 +76,7 @@ button:hover {
 	position: fixed;
 	bottom: 1%;
 	right: 1%;
+}
+canvas {
+	background-color: black;
 }
