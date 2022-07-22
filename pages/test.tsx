@@ -8,7 +8,7 @@ function test() {
 	const [height, setHeight] = useState(0);
 	const [question, setQuestion] = useState("Who?");
 	const [answer, setAnswer] = useState(["adksfkl", "asdfas", "asdfd", "ddd"]);
-	const [level, setLevel] = useState("");
+	const [level, setLevel] = useState(0);
 	class Player {
 		x: number;
 		y: number;
@@ -51,8 +51,10 @@ function test() {
 	}, [Player]);
 
 	useEffect(() => {
-		console.log(questions.questions);
-	}, []);
+		console.log(questions.questions[level]);
+		setQuestion(questions.questions[level].q);
+		setAnswer(questions.questions[level].a);
+	}, [level]);
 
 	return (
 		<div>
@@ -63,10 +65,18 @@ function test() {
 			<div className="blackbox">
 				<h1>{question}</h1>
 				<div className="answers">
-					<button>{answer[0]}</button>
-					<button>{answer[1]}</button>
-					<button>{answer[2]}</button>
-					<button>{answer[3]}</button>
+					<button onClick={() => setLevel(level + 1)}>
+						{answer[0]}
+					</button>
+					<button onClick={() => setLevel(level + 1)}>
+						{answer[1]}
+					</button>
+					<button onClick={() => setLevel(level + 1)}>
+						{answer[2]}
+					</button>
+					<button onClick={() => setLevel(level + 1)}>
+						{answer[3]}
+					</button>
 				</div>
 			</div>
 		</div>
