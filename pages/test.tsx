@@ -5,7 +5,6 @@ function test() {
 	const canvasRef = useRef(null);
 	const [width, setWidth] = useState(0);
 	const [height, setHeight] = useState(0);
-	const [score, setScore] = useState(0);
 
 	class Player {
 		x: number;
@@ -30,7 +29,7 @@ function test() {
 		}
 	}
 	const [x, y] = [width / 2, height / 2];
-	const player = new Player(x, y, "white", 15);
+	const player = new Player(x, y, "red", 15);
 
 	useEffect(() => {
 		const canvas: any = canvasRef.current;
@@ -45,11 +44,9 @@ function test() {
 		console.log(img);
 
 		img.onload = function () {
-			console.log("img was loaded");
-
-			c.drawImage(img, 10, 0);
+			c.drawImage(img, 0, 0, width, height);
+			player.draw(c);
 		};
-		player.draw(c);
 	}, [Player]);
 
 	function nextQuestion() {}
