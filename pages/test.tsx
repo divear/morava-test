@@ -1,11 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import mapa from "../public/mapa.jpg";
+import questions from "../public/questions.json";
 
 function test() {
 	const canvasRef = useRef(null);
 	const [width, setWidth] = useState(0);
 	const [height, setHeight] = useState(0);
-
+	const [question, setQuestion] = useState("Who?");
+	const [answer, setAnswer] = useState(["adksfkl", "asdfas", "asdfd", "ddd"]);
+	const [level, setLevel] = useState("");
 	class Player {
 		x: number;
 		y: number;
@@ -40,8 +43,6 @@ function test() {
 
 		const img: any = new Image();
 		img.src = mapa.src;
-		console.log(mapa);
-		console.log(img);
 
 		img.onload = function () {
 			c.drawImage(img, 0, 0, width, height);
@@ -49,7 +50,9 @@ function test() {
 		};
 	}, [Player]);
 
-	function nextQuestion() {}
+	useEffect(() => {
+		console.log(questions.questions);
+	}, []);
 
 	return (
 		<div>
@@ -58,8 +61,13 @@ function test() {
 				<canvas ref={canvasRef} width={width} height={height} />
 			</div>
 			<div className="blackbox">
-				<h1>test</h1>
-				<button onClick={nextQuestion}>next</button>
+				<h1>{question}</h1>
+				<div className="answers">
+					<button>{answer[0]}</button>
+					<button>{answer[1]}</button>
+					<button>{answer[2]}</button>
+					<button>{answer[3]}</button>
+				</div>
 			</div>
 		</div>
 	);
