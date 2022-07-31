@@ -83,26 +83,22 @@ function test() {
 		switch (answerScore) {
 			case 0:
 				console.log("Praha");
-				//const canvas: any = canvasRef.current;
-				//const c = canvas && canvas.getContext("2d");
-				//const player = new Player(x, y, "red", 105);
-				//players[0].update(c)
-
-				//players.push(new Player(100, y, "blue", 30));
-				//console.log(players);
-				console.log(px);
-
-				setPx(px + 100);
-
+				setPx(px - 50);
 				return;
 			case 1:
 				console.log("Brno");
+				setPx(px + 30);
+				setPy(py + 30);
 				return;
 			case 2:
 				console.log("Ostrava");
+				setPx(px + 30);
+				setPy(py - 1);
 				return;
 			case 3:
 				console.log("Ústí");
+				setPx(px - 30);
+				setPy(py - 20);
 				return;
 		}
 	}
@@ -116,16 +112,16 @@ function test() {
 				<h1>{question}</h1>
 				<div className="answers">
 					<button onClick={() => nextLevel(0)}>
-						{"1. " + answer[rn[0]]}
+						{answer[rn[0]]}
 					</button>
 					<button onClick={() => nextLevel(1)}>
-						{"2. " + answer[rn[1]]}
+						{answer[rn[1]]}
 					</button>
 					<button onClick={() => nextLevel(2)}>
-						{"3. " + answer[rn[2]]}
+						{answer[rn[2]]}
 					</button>
 					<button onClick={() => nextLevel(3)}>
-						{"4. " + answer[rn[3]]}
+						{answer[rn[3]]}
 					</button>
 				</div>
 			</div>

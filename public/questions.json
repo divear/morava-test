@@ -24,16 +24,26 @@
 			]
 		},
 		{
-			"q": "Co jsi měl dnes k obědu?",
-			"a": ["Trdelník", "Bryndza", "Uhlí", "Herák"]
+			"q": "Oblíbené pití?",
+			"a": ["voda", "Víno", "vitamín džusik", "čistý líh"]
 		},
 		{
-			"q": "Co jsi měl dnes k obědu?",
-			"a": ["Trdelník", "Bryndza", "Uhlí", "Herák"]
+			"q": "Oblíbená píseň?",
+			"a": [
+				"Hymna ČR accapella edition",
+				"jozin z bazin",
+				"velky krtkus rap",
+				"cikan zpiva za dvacku v metru"
+			]
 		},
 		{
-			"q": "Co jsi měl dnes k obědu?",
-			"a": ["Trdelník", "Bryndza", "Uhlí", "Herák"]
+			"q": "Přeprava?",
+			"a": [
+				"Metro (hahaha brno nemá kiškiš haha)",
+				"MHD",
+				"Mercedes-Benz S-Class",
+				"pěšky"
+			]
 		},
 		{
 			"q": "Co jsi měl dnes k obědu?",
