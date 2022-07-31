@@ -9,6 +9,9 @@ function test() {
 	const [question, setQuestion] = useState("Who?");
 	const [answer, setAnswer] = useState(["adksfkl", "asdfas", "asdfd", "ddd"]);
 	const [level, setLevel] = useState(0);
+	const [px, setPx] = useState(0);
+	const [py, setPy] = useState(0);
+
 	class Player {
 		x: number;
 		y: number;
@@ -30,9 +33,16 @@ function test() {
 			c.fillStyle = this.color;
 			c.fill();
 		}
+		update(c: any, mx: number, my: number) {
+			if (this.x > 3000 || this.x < 0 || this.y < 0 || this.y > 3000)
+				return;
+			this.draw(c);
+			this.x = this.x + mx;
+			this.y = this.y + my;
+			this.draw(c);
+		}
 	}
-	const [x, y] = [width / 2, height / 2];
-	const player = new Player(x, y, "red", 15);
+	let players: any = [];
 
 	useEffect(() => {
 		const canvas: any = canvasRef.current;
@@ -40,23 +50,62 @@ function test() {
 		const c = canvas && canvas.getContext("2d");
 		setHeight(window.innerHeight / 1.5);
 		setWidth(window.innerWidth / 2);
+		if (!px) {
+			let [x, y] = [width / 2, height / 2];
+			setPx(x);
+			setPy(y);
+		}
 
 		const img: any = new Image();
 		img.src = mapa.src;
 
 		img.onload = function () {
 			c.drawImage(img, 0, 0, width, height);
-			player.draw(c);
+			players.push(new Player(px, py, "red", 15));
+			players.forEach((p: any) => {
+				if (!px) return;
+
+				console.log(p);
+				p.draw(c);
+			});
 		};
-	}, [Player]);
+	}, [players, level]);
 
 	useEffect(() => {
-		console.log(questions.questions[level]);
 		setQuestion(questions.questions[level].q);
 		setAnswer(questions.questions[level].a);
 	}, [level]);
 
 	const rn = [0, 1, 2, 3];
+
+	function nextLevel(answerScore: number) {
+		setLevel(level + 1);
+		switch (answerScore) {
+			case 0:
+				console.log("Praha");
+				//const canvas: any = canvasRef.current;
+				//const c = canvas && canvas.getContext("2d");
+				//const player = new Player(x, y, "red", 105);
+				//players[0].update(c)
+
+				//players.push(new Player(100, y, "blue", 30));
+				//console.log(players);
+				console.log(px);
+
+				setPx(px + 100);
+
+				return;
+			case 1:
+				console.log("Brno");
+				return;
+			case 2:
+				console.log("Ostrava");
+				return;
+			case 3:
+				console.log("Ústí");
+				return;
+		}
+	}
 	return (
 		<div>
 			<div className="mapa">
@@ -66,16 +115,16 @@ function test() {
 			<div className="blackbox">
 				<h1>{question}</h1>
 				<div className="answers">
-					<button onClick={() => setLevel(level + 1)}>
+					<button onClick={() => nextLevel(0)}>
 						{"1. " + answer[rn[0]]}
 					</button>
-					<button onClick={() => setLevel(level + 1)}>
+					<button onClick={() => nextLevel(1)}>
 						{"2. " + answer[rn[1]]}
 					</button>
-					<button onClick={() => setLevel(level + 1)}>
+					<button onClick={() => nextLevel(2)}>
 						{"3. " + answer[rn[2]]}
 					</button>
-					<button onClick={() => setLevel(level + 1)}>
+					<button onClick={() => nextLevel(3)}>
 						{"4. " + answer[rn[3]]}
 					</button>
 				</div>

@@ -6,13 +6,38 @@
 			"a": ["Trdelník", "Bryndza", "Uhlí", "Herák"]
 		},
 		{
-			"q": "Kde bydlíš",
+			"q": "Kde bydlíš?",
 			"a": [
 				"Panelák",
 				"Rodinný dům",
 				"Doma xdd🤣🤣🤣 fksadfkl",
 				"Tu a tam"
 			]
+		},
+		{
+			"q": "Tvoje práce?",
+			"a": [
+				"Discord moderátor",
+				"Farmář",
+				"uh..no...uhhhh....hmm...",
+				"drug dealer"
+			]
+		},
+		{
+			"q": "Co jsi měl dnes k obědu?",
+			"a": ["Trdelník", "Bryndza", "Uhlí", "Herák"]
+		},
+		{
+			"q": "Co jsi měl dnes k obědu?",
+			"a": ["Trdelník", "Bryndza", "Uhlí", "Herák"]
+		},
+		{
+			"q": "Co jsi měl dnes k obědu?",
+			"a": ["Trdelník", "Bryndza", "Uhlí", "Herák"]
+		},
+		{
+			"q": "Co jsi měl dnes k obědu?",
+			"a": ["Trdelník", "Bryndza", "Uhlí", "Herák"]
 		}
 	]
 }
