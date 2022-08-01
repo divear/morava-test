@@ -11,6 +11,7 @@ function test() {
 	const [level, setLevel] = useState(0);
 	const [px, setPx] = useState(0);
 	const [py, setPy] = useState(0);
+	const [procent, setProcent] = useState(50);
 
 	class Player {
 		x: number;
@@ -64,8 +65,6 @@ function test() {
 			players.push(new Player(px, py, "red", 15));
 			players.forEach((p: any) => {
 				if (!px) return;
-
-				console.log(p);
 				p.draw(c);
 			});
 		};
@@ -80,45 +79,63 @@ function test() {
 
 	function nextLevel(answerScore: number) {
 		setLevel(level + 1);
+		console.log(level);
+		console.log(questions.questions.length);
+
+		//finish
+		if (level == questions.questions.length - 1) {
+			localStorage.setItem("p", procent.toString());
+			localStorage.setItem("x", px.toString());
+			localStorage.setItem("y", py.toString());
+
+			window.location.href = "vysledky";
+		}
+		const r = Math.round(Math.random() * 10);
 		switch (answerScore) {
 			case 0:
-				console.log("Praha");
 				setPx(px - 20);
-				setPy(py - 20);
+				setPy(py - 10);
+				setProcent(procent - 10 - r);
 				return;
 			case 1:
-				console.log("Brno");
 				setPx(px + 30);
 				setPy(py + 30);
+				setProcent(procent + 10 + r);
 				return;
 			case 2:
-				console.log("Ostrava");
 				setPx(px + 30);
 				setPy(py - 1);
+				setProcent(procent + 5 + r);
 				return;
 			case 3:
-				console.log("Ústí");
 				setPx(px - 30);
 				setPy(py - 20);
+				setProcent(procent - 15 - r);
 				return;
 		}
 	}
 	return (
 		<div>
 			<div className="mapa">
-				<h1>50.54% moravák</h1>
+				<h1>{procent}% moravák</h1>
 				<canvas ref={canvasRef} width={width} height={height} />
 			</div>
 			<div className="blackbox">
 				<h1>{question}</h1>
 				<div className="answers">
-					<button onClick={() => nextLevel(0)}>
+					<button
+						style={{ order: Math.round(Math.random() * 3) }}
+						onClick={() => nextLevel(0)}
+					>
 						{answer[rn[0]]}
 					</button>
 					<button onClick={() => nextLevel(1)}>
 						{answer[rn[1]]}
 					</button>
-					<button onClick={() => nextLevel(2)}>
+					<button
+						style={{ order: Math.round(Math.random() * 3) }}
+						onClick={() => nextLevel(2)}
+					>
 						{answer[rn[2]]}
 					</button>
 					<button onClick={() => nextLevel(3)}>

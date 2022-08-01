@@ -3,6 +3,8 @@
 	--fr: rgb(251, 251, 251);
 	--or: rgb(255, 128, 0);
 	--orf: rgb(254, 150, 47);
+	--sh: rgb(58, 170, 240);
+	--shh: rgb(47, 156, 224);
 }
 body {
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
@@ -37,7 +39,7 @@ h2 {
 	text-align: center;
 }
 button {
-	border: white solid 1px;
+	border: none;
 	background-color: var(--or);
 	font-size: 2rem;
 	padding: 1vw;
@@ -81,9 +83,6 @@ button:hover {
 	bottom: 1%;
 	right: 1%;
 }
-canvas {
-	background-color: black;
-}
 
 .answers {
 	display: grid;
@@ -93,4 +92,37 @@ canvas {
 
 .answers > button {
 	margin: 1vw;
+}
+.center {
+	display: fixed;
+	top: 0;
+	left: 0;
+	transform: translate(calc(50vw - 50%));
+	width: 55%;
+	height: 95vh;
+}
+canvas {
+	background-color: rgb(255, 255, 255);
+	border-radius: 12vw;
+	margin: 0 0 0 2.5vw;
+}
+.floatRight {
+	float: right;
+}
+.sb {
+	padding: 0.5vw;
+	margin: 0 5vw 10vw 0;
+	font-size: 1.7rem;
+	background-color: var(--sh);
+}
+.sb:hover {
+	background-color: var(--shh);
+}
+
+.inlineImg {
+	display: inline;
+	width: 1.5vw;
+}
+.resultCanvas {
+	margin: 0 0 0 2.5vw;
 }
