@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import mapa from "../public/mapa2.gif";
+import Meta from "../public/Meta";
 import reload from "../public/reload.svg";
 
 function result() {
@@ -71,6 +72,7 @@ function result() {
 
 	return (
 		<>
+			<Meta title="Výsledky" />
 			<div className="blackbox center">
 				<h1>Výsledky</h1>
 				<h2>{procent}% moravák</h2>
@@ -86,23 +88,6 @@ function result() {
 				>
 					Zkusit znovu
 				</button>
-			</div>
-			<div className="socialMedia">
-				<button
-					onClick={() =>
-						open(
-							"https://twitter.com/divear0?ref_src=twsrc%5Etfw",
-							"_blank"
-						)
-					}
-					className="sb share"
-					data-size="large"
-					data-show-screen-name="false"
-					data-show-count="false"
-				>
-					Follow @divear0
-				</button>
-				<h1>dlfsd</h1>
 			</div>
 		</>
 	);

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import mapa from "../public/mapa.jpg";
+import Meta from "../public/Meta";
 import questions from "../public/questions.json";
 
 function test() {
@@ -116,6 +117,7 @@ function test() {
 	}
 	return (
 		<div>
+			<Meta title="Jak moc jsi moravák" />
 			<div className="mapa">
 				<h1>{procent}% moravák</h1>
 				<canvas ref={canvasRef} width={width} height={height} />

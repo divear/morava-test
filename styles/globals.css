@@ -135,10 +135,14 @@ canvas {
 	position: fixed;
 	bottom: 0;
 	right: 0;
-	background-color: rgba(0, 0, 0, 0.754);
+	background-color: rgba(0, 0, 0, 0.028);
 	border-radius: 0.5vw;
 }
 
 .tLogo {
 	width: 2vw;
+}
+.gLogo {
+	width: 2vw;
+	filter: invert();
 }

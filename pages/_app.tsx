@@ -6,6 +6,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 		<>
 			<Component {...pageProps} />
 			<div className="socialMedia">
+				divear 2022©
 				<button
 					onClick={() =>
 						open(
@@ -21,7 +22,23 @@ function MyApp({ Component, pageProps }: AppProps) {
 					<img
 						className="tLogo"
 						src="https://clipartcraft.com/images/white-twitter-logo-icon-8.png"
-						alt=""
+						alt="Twitter"
+					/>
+				</button>
+				<button
+					onClick={() =>
+						open("https://github.com/lukascobit", "_blank")
+					}
+					style={{ backgroundColor: "#0d1117" }}
+					className="sb share"
+					data-size="large"
+					data-show-screen-name="false"
+					data-show-count="false"
+				>
+					<img
+						className="gLogo"
+						src="https://pngimg.com/uploads/github/github_PNG80.png"
+						alt="Github"
 					/>
 				</button>
 			</div>
