@@ -83,7 +83,8 @@ function test() {
 		switch (answerScore) {
 			case 0:
 				console.log("Praha");
-				setPx(px - 50);
+				setPx(px - 20);
+				setPy(py - 20);
 				return;
 			case 1:
 				console.log("Brno");

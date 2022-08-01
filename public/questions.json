@@ -46,8 +46,21 @@
 			]
 		},
 		{
-			"q": "Co jsi měl dnes k obědu?",
-			"a": ["Trdelník", "Bryndza", "Uhlí", "Herák"]
+			"q": "Koníčky?",
+			"a": ["nakupování", "chlast", "Herák", "chlast"]
+		},
+		{
+			"q": "Názor na menšiny?",
+			"a": [
+				"Miluji menšiny🤎💛❤️",
+				"🤷‍♂️",
+				"Nenavidim ngry!!",
+				"jsem menšina"
+			]
+		},
+		{
+			"q": "Stav?",
+			"a": ["Single", "Taken", "Gamer", "nalitej"]
 		}
 	]
 }
