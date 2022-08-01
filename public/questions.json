@@ -2,7 +2,7 @@
 	"mesta": ["Praha", "Brno", "Ostrava", "Ústí"],
 	"questions": [
 		{
-			"q": "Co jsi měl dnes k obědu?",
+			"q": "Oblíbené jídlo?",
 			"a": ["Trdelník", "Bryndza", "Uhlí", "Herák"]
 		},
 		{

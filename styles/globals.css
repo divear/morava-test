@@ -77,6 +77,7 @@ button:hover {
 	background-color: rgba(0, 0, 0, 0.518);
 	border-radius: 5vw;
 	margin: 1vw 0;
+	padding: 0;
 }
 .smallInfo {
 	position: fixed;
@@ -104,25 +105,40 @@ button:hover {
 canvas {
 	background-color: rgb(255, 255, 255);
 	border-radius: 12vw;
-	margin: 0 0 0 2.5vw;
 }
 .floatRight {
 	float: right;
 }
-.sb {
-	padding: 0.5vw;
-	margin: 0 5vw 10vw 0;
-	font-size: 1.7rem;
+.share {
 	background-color: var(--sh);
+	margin: 0.5vw;
+	padding: 0;
 }
-.sb:hover {
+.share:hover {
 	background-color: var(--shh);
 }
-
+.sb {
+	padding: 0.5vw;
+	font-size: 1.7rem;
+}
 .inlineImg {
 	display: inline;
 	width: 1.5vw;
 }
 .resultCanvas {
 	margin: 0 0 0 2.5vw;
+}
+.reload {
+	margin: 0 0 0vh 5vw;
+}
+.socialMedia {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.754);
+	border-radius: 0.5vw;
+}
+
+.tLogo {
+	width: 2vw;
 }

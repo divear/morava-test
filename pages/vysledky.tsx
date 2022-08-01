@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import mapa from "../public/mapa2.gif";
+import reload from "../public/reload.svg";
 
 function result() {
 	const [width, setWidth] = useState(0);
@@ -69,24 +70,41 @@ function result() {
 	}, [px, py]);
 
 	return (
-		<div className="blackbox center">
-			<h1>Výsledky</h1>
-			<h2>{procent}% moravák</h2>
-			<canvas
-				className="resultCanvas"
-				ref={canvasRef}
-				width={width}
-				height={height}
-			/>
-			<button className="floatRight sb">
-				Sdílet
-				<img
-					src="https://freepngimg.com/thumb/web_design/51032-8-share-free-transparent-image-hq.png"
-					alt=""
-					className="inlineImg"
+		<>
+			<div className="blackbox center">
+				<h1>Výsledky</h1>
+				<h2>{procent}% moravák</h2>
+				<canvas
+					className="resultCanvas"
+					ref={canvasRef}
+					width={width}
+					height={height}
 				/>
-			</button>
-		</div>
+				<button
+					onClick={() => (location.href = "test")}
+					className="sb reload"
+				>
+					Zkusit znovu
+				</button>
+			</div>
+			<div className="socialMedia">
+				<button
+					onClick={() =>
+						open(
+							"https://twitter.com/divear0?ref_src=twsrc%5Etfw",
+							"_blank"
+						)
+					}
+					className="sb share"
+					data-size="large"
+					data-show-screen-name="false"
+					data-show-count="false"
+				>
+					Follow @divear0
+				</button>
+				<h1>dlfsd</h1>
+			</div>
+		</>
 	);
 }
 
