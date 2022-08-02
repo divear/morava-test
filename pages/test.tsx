@@ -13,6 +13,7 @@ function test() {
 	const [px, setPx] = useState(0);
 	const [py, setPy] = useState(0);
 	const [procent, setProcent] = useState(50);
+	const [imgIndex, setImgIndex] = useState(0);
 
 	class Player {
 		x: number;
@@ -76,8 +77,6 @@ function test() {
 		setAnswer(questions.questions[level].a);
 	}, [level]);
 
-	const rn = [0, 1, 2, 3];
-
 	function nextLevel(answerScore: number) {
 		setLevel(level + 1);
 		console.log(level);
@@ -117,7 +116,7 @@ function test() {
 	}
 	return (
 		<div>
-			<Meta title="Jak moc jsi moravák" />
+			<Meta title="Jak moc jsi moravák?" />
 			<div className="mapa">
 				<h1>{procent}% moravák</h1>
 				<canvas ref={canvasRef} width={width} height={height} />
@@ -129,19 +128,29 @@ function test() {
 						style={{ order: Math.round(Math.random() * 3) }}
 						onClick={() => nextLevel(0)}
 					>
-						{answer[rn[0]]}
+						{answer[0]}
 					</button>
-					<button onClick={() => nextLevel(1)}>
-						{answer[rn[1]]}
-					</button>
+					<button onClick={() => nextLevel(1)}>{answer[1]}</button>
 					<button
 						style={{ order: Math.round(Math.random() * 3) }}
 						onClick={() => nextLevel(2)}
 					>
-						{answer[rn[2]]}
+						{answer[2]}
 					</button>
-					<button onClick={() => nextLevel(3)}>
-						{answer[rn[3]]}
+					<button
+						className={answer[3] == "img" ? "imgButton" : undefined}
+						onClick={() => nextLevel(3)}
+					>
+						{answer[3]}
+						<img
+							className="buttonImage"
+							src={
+								answer[3] == "img"
+									? questions.urls[imgIndex]
+									: undefined
+							}
+							alt=""
+						/>
 					</button>
 				</div>
 			</div>
