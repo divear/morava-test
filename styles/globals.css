@@ -159,3 +159,6 @@ canvas {
 	margin: 0.01vw;
 	font-size: 0;
 }
+.no {
+	display: none;
+}

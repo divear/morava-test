@@ -143,7 +143,9 @@ function test() {
 					>
 						{answer[3]}
 						<img
-							className="buttonImage"
+							className={
+								answer[3] == "img" ? "buttonImage" : "no"
+							}
 							src={
 								answer[3] == "img"
 									? questions.urls[imgIndex]

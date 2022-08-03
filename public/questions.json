@@ -52,7 +52,7 @@
 		{
 			"q": "Názor na menšiny?",
 			"a": [
-				"Miluji menšiny🤎💛❤️🏳️‍🌈🏳️‍⚧️",
+				"Miluji menšiny🤎💛️🏳️‍🌈🏳️‍⚧️",
 				"🤷‍♂️",
 				"Nenavidim ngry!!",
 				"jsem menšina"
@@ -61,9 +61,14 @@
 		{
 			"q": "Kouříš?",
 			"a": ["Koho?", "Kolik?", "jo", "Co?"]
+		},
+		{
+			"q": "Jaká je tvá oblíbená pohádka",
+			"a": ["Krteček", "Rakosníček", "jo", "Co?"]
 		}
 	],
 	"urls": [
-		"https://neaddictions.com/wp-content/uploads/2019/04/Living-with-an-alcoholic.jpg"
+		"https://neaddictions.com/wp-content/uploads/2019/04/Living-with-an-alcoholic.jpg",
+		"https://c1.primacdn.cz/sites/default/files/styles/landscape_extra_large/public/1/2e/4912332-iqyvwstyrjd_s720x720.jpg?itok=Q9Dlq-jc&c=def_cloudinary"
 	]
 }
