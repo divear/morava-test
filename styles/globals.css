@@ -145,6 +145,12 @@ canvas {
 	width: 2vw;
 	filter: invert();
 }
+.ytLogo {
+	width: 2vw;
+}
+.ytButton {
+	background-color: #f60101 !important;
+}
 .buttonImage {
 	width: 100%;
 	margin: 0;

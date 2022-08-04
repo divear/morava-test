@@ -41,6 +41,25 @@ function MyApp({ Component, pageProps }: AppProps) {
 						alt="Github"
 					/>
 				</button>
+				<button
+					onClick={() =>
+						open(
+							"https://www.youtube.com/channel/UCwWXZqqwhdVq50W3vZ4aDSg",
+							"_blank"
+						)
+					}
+					style={{ backgroundColor: "#0d1117" }}
+					className="sb share ytButton"
+					data-size="large"
+					data-show-screen-name="false"
+					data-show-count="false"
+				>
+					<img
+						className="ytLogo"
+						src="https://gizmos.republica.com/files/2014/05/youtube-logo.jpg"
+						alt="Github"
+					/>
+				</button>
 			</div>
 		</>
 	);

@@ -60,7 +60,7 @@
 		},
 		{
 			"q": "Kouříš?",
-			"a": ["Koho?", "Kolik?", "jo", "Co?"]
+			"a": ["Koho?", "ne", "jo", "Co?"]
 		},
 		{
 			"q": "Jaká je tvá oblíbená pohádka",
