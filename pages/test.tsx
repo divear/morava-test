@@ -14,6 +14,7 @@ function test() {
 	const [py, setPy] = useState(0);
 	const [procent, setProcent] = useState(50);
 	const [imgIndex, setImgIndex] = useState(0);
+	const isImage = answer[3] == "img";
 
 	class Player {
 		x: number;
@@ -75,12 +76,15 @@ function test() {
 	useEffect(() => {
 		setQuestion(questions.questions[level].q);
 		setAnswer(questions.questions[level].a);
+		if (isImage) {
+			console.log(imgIndex);
+
+			setImgIndex(imgIndex + 1);
+		}
 	}, [level]);
 
 	function nextLevel(answerScore: number) {
 		setLevel(level + 1);
-		console.log(level);
-		console.log(questions.questions.length);
 
 		//finish
 		if (level == questions.questions.length - 1) {
@@ -138,19 +142,13 @@ function test() {
 						{answer[2]}
 					</button>
 					<button
-						className={answer[3] == "img" ? "imgButton" : undefined}
+						className={isImage ? "imgButton" : undefined}
 						onClick={() => nextLevel(3)}
 					>
 						{answer[3]}
 						<img
-							className={
-								answer[3] == "img" ? "buttonImage" : "no"
-							}
-							src={
-								answer[3] == "img"
-									? questions.urls[imgIndex]
-									: undefined
-							}
+							className={isImage ? "buttonImage" : "no"}
+							src={isImage ? questions.urls[imgIndex] : undefined}
 							alt=""
 						/>
 					</button>
