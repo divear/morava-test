@@ -20,6 +20,17 @@ function Meta(i: info) {
 			<link rel="icon" href="/favicon.ico" />
 			<meta name="author" content="divear" />
 			<title>{i.title}</title>
+
+			{/* twitter */}
+			<meta name="twitter:card" content="./mapa3.jpg" />
+			<meta name="twitter:title" content="Jak moc jsi moravák?" />
+			<meta
+				name="twitter:description"
+				content="Zjisti, jak moc jsi z moravy."
+			/>
+			<meta name="twitter:creator" content="@divear0" />
+			<meta name="twitter:image" content="./morava.png" />
+			<meta name="twitter:domain" content="https://morava.netlify.app/" />
 		</Head>
 	);
 }
