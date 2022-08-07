@@ -3,7 +3,7 @@ import mapa from "../public/mapa.jpg";
 import Meta from "../public/Meta";
 import questions from "../public/questions.json";
 
-function test() {
+function Test() {
 	const canvasRef = useRef(null);
 	const [width, setWidth] = useState(0);
 	const [height, setHeight] = useState(0);
@@ -158,4 +158,4 @@ function test() {
 	);
 }
 
-export default test;
+export default Test;

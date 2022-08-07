@@ -3,7 +3,7 @@ import mapa from "../public/mapa2.gif";
 import Meta from "../public/Meta";
 import reload from "../public/reload.svg";
 
-function result() {
+function Result() {
 	const [width, setWidth] = useState(0);
 	const [height, setHeight] = useState(0);
 	const canvasRef = useRef(null);
@@ -93,4 +93,4 @@ function result() {
 	);
 }
 
-export default result;
+export default Result;
