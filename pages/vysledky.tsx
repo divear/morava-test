@@ -75,7 +75,11 @@ function Result() {
 			<Meta title="Výsledky" />
 			<div className="blackbox center">
 				<h1>Výsledky</h1>
-				<h2>{procent}% moravák</h2>
+				<div className="progressPar">
+					<div className="progress" style={{ width: `${procent}%` }}>
+						<p className="noWidth">{procent}% moravák</p>
+					</div>
+				</div>
 				<canvas
 					className="resultCanvas"
 					ref={canvasRef}
