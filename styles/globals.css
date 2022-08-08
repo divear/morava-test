@@ -168,26 +168,23 @@ canvas {
 .no {
 	display: none;
 }
-progress {
-	width: 90%;
-	display: flex;
-	justify-content: center;
-	margin: 2vw;
-}
 .progressPar {
 	margin: 1vw auto;
 	padding: 2px;
 	width: 100%;
 	max-width: 500px;
 	border: 3px solid var(--or);
-	height: 30px;
+	height: 1.8vw;
 }
 .progress {
 	height: 100%;
 	background-color: var(--orf);
 }
-.noWidth {
+.percentText {
 	margin: 0%;
-	font-size: 1.5rem;
+	font-size: 1.6rem;
 	text-align: center;
+}
+.emptyProgress > p {
+	width: 100%;
 }

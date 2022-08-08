@@ -76,8 +76,15 @@ function Result() {
 			<div className="blackbox center">
 				<h1>Výsledky</h1>
 				<div className="progressPar">
-					<div className="progress" style={{ width: `${procent}%` }}>
-						<p className="noWidth">{procent}% moravák</p>
+					<div
+						className={
+							procent > "10" ? "progress" : "emptyProgress"
+						}
+						style={{
+							width: `${procent}%`,
+						}}
+					>
+						<p className="percentText">{procent}% moravák</p>
 					</div>
 				</div>
 				<canvas
