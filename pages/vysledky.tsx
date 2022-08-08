@@ -77,9 +77,7 @@ function Result() {
 				<h1>Výsledky</h1>
 				<div className="progressPar">
 					<div
-						className={
-							procent > "10" ? "progress" : "emptyProgress"
-						}
+						className={procent > "0" ? "progress" : "emptyProgress"}
 						style={{
 							width: `${procent}%`,
 						}}
@@ -99,6 +97,7 @@ function Result() {
 				>
 					Zkusit znovu
 				</button>
+				<a href="https://twitter.com/intent/tweet?text=Remove+First+Character+from+a+String+in+JavaScript&url=https%3A%2F%2Fherewecode.io%2Fblog%2Fjavascript-remove-first-character-string%2F"></a>
 			</div>
 		</>
 	);

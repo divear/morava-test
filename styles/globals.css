@@ -184,6 +184,10 @@ canvas {
 	margin: 0%;
 	font-size: 1.6rem;
 	text-align: center;
+	clear: both;
+	display: inline-block;
+	overflow: hidden;
+	white-space: nowrap;
 }
 .emptyProgress > p {
 	width: 100%;
