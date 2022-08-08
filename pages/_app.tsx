@@ -57,7 +57,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 					<img
 						className="ytLogo"
 						src="https://gizmos.republica.com/files/2014/05/youtube-logo.jpg"
-						alt="Github"
+						alt="Youtube"
 					/>
 				</button>
 			</div>

@@ -97,7 +97,16 @@ function Result() {
 				>
 					Zkusit znovu
 				</button>
-				<a href="https://twitter.com/intent/tweet?text=Remove+First+Character+from+a+String+in+JavaScript&url=https%3A%2F%2Fherewecode.io%2Fblog%2Fjavascript-remove-first-character-string%2F"></a>
+				<button
+					onClick={() =>
+						open(
+							"https://twitter.com/intent/tweet?text=Remove+First+Character+from+a+String+in+JavaScript&url=https%3A%2F%2Fherewecode.io%2Fblog%2Fjavascript-remove-first-character-string%2F",
+							"_blank"
+						)
+					}
+				>
+					share
+				</button>
 			</div>
 		</>
 	);
