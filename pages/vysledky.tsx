@@ -98,14 +98,15 @@ function Result() {
 					Zkusit znovu
 				</button>
 				<button
+					className="shareResultOnTwitter"
 					onClick={() =>
 						open(
-							"https://twitter.com/intent/tweet?text=Remove+First+Character+from+a+String+in+JavaScript&url=https%3A%2F%2Fherewecode.io%2Fblog%2Fjavascript-remove-first-character-string%2F",
+							`https://twitter.com/intent/tweet?text=Jsem+${procent}%25+moravák!&url=https://morava.lol`,
 							"_blank"
 						)
 					}
 				>
-					share
+					sdílet
 				</button>
 			</div>
 		</>
