@@ -195,6 +195,14 @@ canvas {
 .shareResultOnTwitter {
 	float: right;
 	background-color: var(--sh);
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 	margin: 0 5vw 0 0;
+	padding: 0.5vw;
+}
+
+.shareResultOnTwitter:hover {
+	float: right;
+	background-color: var(--shh);
+	margin: 0 5vw 0 0;
+	padding: 1vw;
 }

@@ -106,7 +106,12 @@ function Result() {
 						)
 					}
 				>
-					sdílet
+					Sdílet na
+					<img
+						className="tLogo"
+						src="https://clipartcraft.com/images/white-twitter-logo-icon-8.png"
+						alt="twitteru"
+					/>
 				</button>
 			</div>
 		</>
