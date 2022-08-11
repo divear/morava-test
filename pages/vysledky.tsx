@@ -82,7 +82,7 @@ function Result() {
 							width: `${procent}%`,
 						}}
 					>
-						<p className="percentText">{procent}% moravák</p>
+						<p className="percentText"> {procent}% moravák</p>
 					</div>
 				</div>
 				<canvas

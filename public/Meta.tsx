@@ -10,6 +10,10 @@ interface info {
 function Meta(i: info) {
 	return (
 		<Head>
+			<script
+				async
+				src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3177879883146014"
+			></script>
 			<meta
 				name="viewport"
 				content="width=device-width, initial-scale=1"

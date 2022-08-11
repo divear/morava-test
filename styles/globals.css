@@ -181,7 +181,7 @@ canvas {
 	background-color: var(--orf);
 }
 .percentText {
-	margin: 0%;
+	margin: 0 0 0 1vw;
 	font-size: 1.6rem;
 	text-align: center;
 	clear: both;
@@ -189,8 +189,10 @@ canvas {
 	overflow: hidden;
 	white-space: nowrap;
 }
+/* empty percent text */
 .emptyProgress > p {
 	width: 100%;
+	margin: 0;
 }
 .shareResultOnTwitter {
 	float: right;
