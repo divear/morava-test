@@ -97,6 +97,13 @@ function Result() {
 				>
 					Zkusit znovu
 				</button>
+				{/* new answer button */}
+				<button
+					onClick={() => (location.href = "nove-otazky")}
+					className="newQuestions"
+				>
+					Navrhni nové otázky!
+				</button>
 				<button
 					className="shareResultOnTwitter"
 					onClick={() =>
