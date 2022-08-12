@@ -16,6 +16,87 @@ body {
 	background-color: var(--bg);
 	color: var(--fr);
 }
+reload {
+	margin: 0 0 0vh 5vw;
+}
+.socialMedia {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.028);
+	border-radius: 0.5vw;
+}
+.tLogo {
+	width: 2vw;
+}
+.gLogo {
+	width: 2vw;
+	filter: invert();
+}
+.ytLogo {
+	width: 2vw;
+}
+.ytButton {
+	background-color: #f60101 !important;
+}
+.buttonImage {
+	width: 100%;
+	margin: 0;
+	border-radius: 1vw;
+}
+.imgButton {
+	padding: 0;
+	font-size: 0;
+}
+
+.imgButton:hover {
+	margin: 0.01vw;
+	font-size: 0;
+}
+.no {
+	display: none;
+}
+.progressPar {
+	margin: 1vw auto;
+	padding: 2px;
+	width: 100%;
+	max-width: 500px;
+	border: 3px solid var(--or);
+	height: 1.8vw;
+}
+.progress {
+	height: 100%;
+	background-color: var(--orf);
+}
+.percentText {
+	margin: 0 0 0 1vw;
+	font-size: 1.6rem;
+	text-align: center;
+	clear: both;
+	display: inline-block;
+	overflow: hidden;
+	white-space: nowrap;
+}
+/* empty percent text */
+.emptyProgress > p {
+	width: 100%;
+	margin: 0;
+}
+.shareResultOnTwitter {
+	float: right;
+	background-color: var(--sh);
+	font-size: 1.8rem;
+	margin: 0 5vw 0 0;
+	padding: 0.5vw;
+}
+
+.shareResultOnTwitter:hover {
+	float: right;
+	background-color: var(--shh);
+	margin: 0 5vw 0 0;
+	padding: 1vw;
+}
+
 body::before {
 	content: "";
 	background-image: url("../public/mapa3.jpg");
