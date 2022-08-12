@@ -176,6 +176,7 @@ button:hover {
 	margin: 1vw;
 }
 .center {
+	text-align: center;
 	display: fixed;
 	top: 0;
 	left: 0;
@@ -292,4 +293,19 @@ canvas {
 .newQuestions {
 	margin: 0 0 0 2vw;
 	padding: 0.3vw;
+}
+.questions {
+	font-size: 2rem;
+}
+input {
+	font-size: 2rem;
+}
+.answersInput {
+	margin: 1vw;
+}
+.answersInput > * {
+	margin: 0.5vw 10vw;
+}
+#otazka {
+	margin: 2vw;
 }
