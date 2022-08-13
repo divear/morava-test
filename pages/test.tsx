@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import mapa from "../public/mapa.jpg";
-import Meta from "../public/Meta";
+import Meta from "../components/Meta";
 import questions from "../public/questions.json";
 
 function Test() {

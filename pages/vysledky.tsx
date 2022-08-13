@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import mapa from "../public/mapa2.gif";
-import Meta from "../public/Meta";
+import Meta from "../components/Meta";
 import reload from "../public/reload.svg";
 
 function Result() {

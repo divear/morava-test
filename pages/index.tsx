@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import { useState } from "react";
-import Meta from "../public/Meta";
+import Meta from "../components/Meta";
 
 const Home: NextPage = () => {
 	const [otazka, setOtazka] = useState("Odkud jsem?");

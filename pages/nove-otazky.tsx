@@ -1,5 +1,5 @@
 import React from "react";
-import Meta from "../public/Meta";
+import Meta from "../components/Meta";
 
 function Otazky() {
 	return (
