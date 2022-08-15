@@ -52,8 +52,16 @@ function Test() {
 		const canvas: any = canvasRef.current;
 
 		const c = canvas && canvas.getContext("2d");
-		setHeight(window.innerHeight / 1.5);
-		setWidth(window.innerWidth / 2);
+		setHeight(
+			window.innerWidth < 830
+				? window.innerHeight / 3.5
+				: window.innerHeight / 1.5
+		);
+		setWidth(
+			window.innerWidth < 830
+				? window.innerWidth / 1.05
+				: window.innerWidth / 2
+		);
 		if (!px) {
 			let [x, y] = [width / 2, height / 2];
 			setPx(x);
@@ -125,7 +133,7 @@ function Test() {
 				<h1>{procent}% moravák</h1>
 				<canvas ref={canvasRef} width={width} height={height} />
 			</div>
-			<div className="blackbox">
+			<div className="blackbox answersBox">
 				<h1>{question}</h1>
 				<div className="answers">
 					<button
