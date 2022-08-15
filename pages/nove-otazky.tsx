@@ -4,21 +4,8 @@ import { app, getFirestore, addDoc, collection } from "../components/firebase";
 
 const db = getFirestore(app);
 
-async function addToDb() {
-	try {
-		const docRef = await addDoc(collection(db, "users"), {
-			first: "Ada",
-			last: "Lovelace",
-			born: 1815,
-		});
-		console.log("Document written with ID: ", docRef.id);
-	} catch (e) {
-		console.error("Error adding document: ", e);
-	}
-}
-
 function Otazky() {
-	const [question, setQuestion] = useState("Who?");
+	const [question, setQuestion] = useState("");
 	const [answer, setAnswer] = useState(["", "", "", ""]);
 	console.log(answer);
 
@@ -27,6 +14,20 @@ function Otazky() {
 		data.splice(index, 1, value);
 		setAnswer(data);
 	};
+
+	async function addToDb() {
+		try {
+			console.log("adding to db");
+
+			const docRef = await addDoc(collection(db, question), {
+				question,
+				answer,
+			});
+			console.log("Document written with ID: ", docRef.id);
+		} catch (e) {
+			console.error("Error adding document: ", e);
+		}
+	}
 	return (
 		<div className="center blackbox questions">
 			<Meta title="Nová otázka" />
@@ -72,7 +73,7 @@ function Otazky() {
 					placeholder="Ústí nad Labem"
 				/>
 			</div>
-			<button onClick={() => addToDb}>Odeslat</button>
+			<button onClick={addToDb}>Odeslat</button>
 		</div>
 	);
 }

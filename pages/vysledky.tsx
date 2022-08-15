@@ -108,7 +108,7 @@ function Result() {
 					className="shareResultOnTwitter"
 					onClick={() =>
 						open(
-							`https://twitter.com/intent/tweet?text=Jsem+${procent}%25+moravák!&url=https://morava.lol`,
+							`https://twitter.com/intent/tweet?text=Jsem+${procent}%25+moravák+lol&url=https://morava.lol`,
 							"_blank"
 						)
 					}
