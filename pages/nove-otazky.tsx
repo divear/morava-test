@@ -7,7 +7,6 @@ const db = getFirestore(app);
 function Otazky() {
 	const [question, setQuestion] = useState("");
 	const [answer, setAnswer] = useState(["", "", "", ""]);
-	console.log(answer);
 
 	const handleChange = (index: number, value: string) => {
 		const data = [...answer];
@@ -17,13 +16,14 @@ function Otazky() {
 
 	async function addToDb() {
 		try {
-			console.log("adding to db");
-
-			const docRef = await addDoc(collection(db, question), {
-				question,
-				answer,
-			});
-			console.log("Document written with ID: ", docRef.id);
+			const docRef = await addDoc(
+				collection(db, question.replaceAll("/", "")),
+				{
+					question,
+					answer,
+				}
+			);
+			location.href = "vysledky";
 		} catch (e) {
 			console.error("Error adding document: ", e);
 		}

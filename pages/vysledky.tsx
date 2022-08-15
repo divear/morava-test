@@ -54,16 +54,11 @@ function Result() {
 
 		const img: any = new Image();
 		img.src = mapa.src;
-		console.log(img.src);
 
 		img.onload = function () {
-			console.log(width);
-
 			c.drawImage(img, 0, 0, width, height);
 			players.push(new Player(px, py, "yellow", 10));
 			players.forEach((p: any) => {
-				console.log(p);
-
 				if (!px) return;
 				p.draw(c);
 			});
