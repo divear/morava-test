@@ -19,6 +19,9 @@ body {
 reload {
 	margin: 0 0 0vh 5vw;
 }
+button {
+	cursor: pointer;
+}
 .socialMedia {
 	position: fixed;
 	bottom: 0;
@@ -308,4 +311,40 @@ input {
 }
 #otazka {
 	margin: 2vw;
+}
+
+/* mobile view */
+@media only screen and (max-width: 830px) {
+	.blackbox {
+		position: fixed;
+		right: 0%;
+		width: 100%;
+		height: 95vh;
+		background-color: rgba(0, 0, 0, 0.518);
+		border-radius: 5vw;
+		margin: 1vw 0;
+	}
+	.introButt {
+		text-align: center;
+		font-size: 5.5rem !important;
+		border-radius: 1vw;
+		position: fixed;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.share {
+		background-color: var(--sh);
+		margin: 0.5vw;
+		padding: 2vw;
+	}
+	.tLogo {
+		width: 7vw;
+	}
+	.gLogo {
+		width: 7vw;
+	}
+	.ytLogo {
+		width: 7vw;
+	}
 }
