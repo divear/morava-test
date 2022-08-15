@@ -32,7 +32,7 @@ function Otazky() {
 		<div className="center blackbox questions">
 			<Meta title="Nová otázka" />
 
-			<h1>Přidej novou otázku do kvízu!</h1>
+			<h1 className="kvizHead">Přidej novou otázku do kvízu!</h1>
 
 			<label htmlFor="otazka">Otázka: </label>
 			<input

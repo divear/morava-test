@@ -49,9 +49,17 @@ function Result() {
 		const canvas: any = canvasRef.current;
 
 		const c = canvas && canvas.getContext("2d");
-		setHeight(window.innerHeight / 1.5);
-		setWidth(window.innerWidth / 2);
 
+		setHeight(
+			window.innerWidth < 830
+				? window.innerHeight / 3.5
+				: window.innerHeight / 1.5
+		);
+		setWidth(
+			window.innerWidth < 830
+				? window.innerWidth / 1.05
+				: window.innerWidth / 2
+		);
 		const img: any = new Image();
 		img.src = mapa.src;
 

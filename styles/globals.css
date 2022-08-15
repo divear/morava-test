@@ -361,4 +361,33 @@ input {
 		margin: 1vw 0;
 		padding: 0;
 	}
+	.progressPar {
+		margin: 1vw auto;
+		padding: 2px;
+		width: 100%;
+		max-width: 90vw;
+		border: 3px solid var(--or);
+		height: 8vw;
+	}
+	/* empty percent text */
+	.emptyProgress > p {
+		width: 100%;
+		margin: 0;
+	}
+	.newQuestions {
+		margin: 10vw 0;
+	}
+	.reload {
+		font-size: 3rem;
+	}
+	.kvizHead {
+		font-size: 1rem;
+	}
+	input {
+		font-size: 1.5rem;
+		width: 80%;
+	}
+	label {
+		font-size: 1.5rem;
+	}
 }
