@@ -5,7 +5,7 @@ function BurgerModal() {
 		<div className="burgerModal">
 			<a href="/test">test</a>
 			<br />
-			<a href="info">info</a>
+			<a href="/info">info</a>
 			<br />
 			<a href="https://github.com/lukascobit/morava-test">github</a>
 		</div>

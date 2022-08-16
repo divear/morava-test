@@ -27,6 +27,9 @@ a:hover {
 	border-radius: 1vw;
 	padding: 1vw;
 }
+p {
+	font-size: 1.5rem;
+}
 button {
 	cursor: pointer;
 }
@@ -334,6 +337,9 @@ input {
 	right: 1%;
 	top: 1%;
 	z-index: 99;
+}
+.info {
+	margin: 1vw;
 }
 .burgerModal {
 	position: fixed;
