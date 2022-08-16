@@ -8,6 +8,7 @@ import * as gtag from "../lib/gtag";
 import Footer from "../components/Footer";
 import logo from "../public/moravaLogo.png";
 import burger from "../public/burger.png";
+import BurgerModal from "../components/BurgerModal";
 
 function MyApp({ Component, pageProps }: AppProps) {
 	const [modal, setModal] = useState(false);
@@ -52,6 +53,11 @@ function MyApp({ Component, pageProps }: AppProps) {
 			<div className="burger" onClick={() => setModal(!modal)}>
 				<Image src={burger} width={50} height={50}></Image>
 			</div>
+			{/* links modal */}
+			<div className={modal ? "" : "no"}>
+				<BurgerModal />
+			</div>
+
 			<Component {...pageProps} />
 			<Footer />
 		</>

@@ -16,8 +16,16 @@ body {
 	background-color: var(--bg);
 	color: var(--fr);
 }
-reload {
-	margin: 0 0 0vh 5vw;
+a {
+	color: var(--fr);
+	margin: 1vw;
+	text-decoration: none;
+}
+a:hover {
+	font-style: italic;
+	background-color: rgba(0, 0, 0, 0.189);
+	border-radius: 1vw;
+	padding: 1vw;
 }
 button {
 	cursor: pointer;
@@ -326,6 +334,15 @@ input {
 	right: 1%;
 	top: 1%;
 	z-index: 99;
+}
+.burgerModal {
+	position: fixed;
+	right: 1%;
+	top: 1%;
+	background-color: rgba(0, 0, 0, 0.62);
+	padding: 5vh 1vw 1vw 1vw;
+	font-size: 3rem;
+	width: 10vw;
 }
 
 /* mobile view */

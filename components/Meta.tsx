@@ -1,8 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import Script from "next/script";
-import logo from "../public/moravaLogo.png";
-import Image from "next/image";
 
 interface info {
 	title: string;

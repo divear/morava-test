@@ -3,7 +3,11 @@ import React from "react";
 function BurgerModal() {
 	return (
 		<div className="burgerModal">
-			<h6>dfklsals</h6>
+			<a href="/test">test</a>
+			<br />
+			<a href="info">info</a>
+			<br />
+			<a href="https://github.com/lukascobit/morava-test">github</a>
 		</div>
 	);
 }
