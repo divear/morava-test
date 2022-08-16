@@ -317,6 +317,15 @@ input {
 	position: fixed;
 	left: 1%;
 	top: 1%;
+	z-index: 99;
+}
+.burger {
+	filter: saturate(1);
+	cursor: pointer;
+	position: fixed;
+	right: 1%;
+	top: 1%;
+	z-index: 99;
 }
 
 /* mobile view */

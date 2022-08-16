@@ -1,14 +1,16 @@
 import "../styles/globals.css";
+import { useEffect, useState } from "react";
 import type { AppProps } from "next/app";
-import { useEffect } from "react";
 import Script from "next/script";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import * as gtag from "../lib/gtag";
 import Footer from "../components/Footer";
 import logo from "../public/moravaLogo.png";
-import Image from "next/image";
+import burger from "../public/burger.png";
 
 function MyApp({ Component, pageProps }: AppProps) {
+	const [modal, setModal] = useState(false);
 	const router = useRouter();
 	useEffect(() => {
 		const handleRouteChange = (url: string) => {
@@ -45,6 +47,10 @@ function MyApp({ Component, pageProps }: AppProps) {
 			{/* header*/}
 			<div onClick={() => (location.href = "/")} className="logo">
 				<Image src={logo} width={160} height={90} />
+			</div>
+			{/* burger menu */}
+			<div className="burger" onClick={() => setModal(!modal)}>
+				<Image src={burger} width={50} height={50}></Image>
 			</div>
 			<Component {...pageProps} />
 			<Footer />
