@@ -312,6 +312,12 @@ input {
 #otazka {
 	margin: 2vw;
 }
+.logo {
+	cursor: pointer;
+	position: fixed;
+	left: 1%;
+	top: 1%;
+}
 
 /* mobile view */
 @media only screen and (max-width: 830px) {

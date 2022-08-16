@@ -5,6 +5,8 @@ import Script from "next/script";
 import { useRouter } from "next/router";
 import * as gtag from "../lib/gtag";
 import Footer from "../components/Footer";
+import logo from "../public/moravaLogo.png";
+import Image from "next/image";
 
 function MyApp({ Component, pageProps }: AppProps) {
 	const router = useRouter();
@@ -40,6 +42,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         `,
 				}}
 			/>
+			{/* header*/}
+			<div onClick={() => (location.href = "/")} className="logo">
+				<Image src={logo} width={160} height={90} />
+			</div>
 			<Component {...pageProps} />
 			<Footer />
 		</>
