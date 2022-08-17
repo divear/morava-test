@@ -2,11 +2,9 @@
 
 # dependencies
 /node_modules
-/lib
 
 /.pnp
 .pnp.js
-gtag.js
 .env
 
 # testing
@@ -39,6 +37,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 
-lib/gtag.js
-lib/
 .env
