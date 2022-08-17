@@ -1,13 +1,14 @@
+import Link from "next/link";
 import React from "react";
 
 function BurgerModal() {
 	return (
 		<div className="burgerModal">
-			<a href="/test">test</a>
+			<Link href="/test">test</Link>
 			<br />
-			<a href="/info">info</a>
+			<Link href="/info">info</Link>
 			<br />
-			<a href="https://github.com/lukascobit/morava-test">github</a>
+			<Link href="https://github.com/lukascobit/morava-test">github</Link>
 		</div>
 	);
 }
