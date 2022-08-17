@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import card from "../public/mapa3.jpg";
 
 interface info {
 	title: string;
@@ -21,7 +22,7 @@ function Meta(i: info) {
 			<meta name="author" content="divear" />
 			<meta content="Jak moc jsi moravák" property="og:title" />
 			<meta content="https://morava.lol" property="og:url" />
-			<meta content="../public/mapa.jpg" property="og:image" />
+			<meta content="../public/mapa3.jpg" property="og:image" />
 			<meta
 				content="Zjisti, jak moc jsi z moravy"
 				property="og:description"
@@ -33,7 +34,7 @@ function Meta(i: info) {
 			/>
 			<title>{i.title}</title>
 			{/* twitter */}
-			<meta name="twitter:card" content="./mapa3.jpg" />
+			<meta name="twitter:card" content="../public/mapa3.jpg" />
 			<meta name="twitter:title" content="Jak moc jsi moravák?" />
 			<meta
 				name="twitter:description"
