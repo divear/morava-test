@@ -20,9 +20,16 @@ function Meta(i: info) {
 			<meta charSet="utf-8" />
 			<link rel="icon" href="/favicon.ico" />
 			<meta name="author" content="divear" />
-			<meta content="Jak moc jsi moravák" property="og:title" />
+			<meta
+				content="MorovaTest - Jak moc jsi moravák?"
+				property="og:title"
+			/>
 			<meta content="https://morava.lol" property="og:url" />
-			<meta content="../public/mapa3.jpg" property="og:image" />
+			<meta
+				content="https://morava.lol/_next/static/media/mapa3.ca826749.jpg"
+				property="og:image"
+			/>
+			<meta property="og:type" content="website" />
 			<meta
 				content="Zjisti, jak moc jsi z moravy"
 				property="og:description"
@@ -34,15 +41,18 @@ function Meta(i: info) {
 			/>
 			<title>{i.title}</title>
 			{/* twitter */}
-			<meta name="twitter:card" content="../public/mapa3.jpg" />
+			<meta name="twitter:card" content="summary_large_image"></meta>
 			<meta name="twitter:title" content="Jak moc jsi moravák?" />
 			<meta
 				name="twitter:description"
 				content="Zjisti, jak moc jsi z moravy."
 			/>
 			<meta name="twitter:creator" content="@divear0" />
-			<meta name="twitter:image" content="./morava.png" />
-			<meta name="twitter:domain" content="https://morava.netlify.app/" />
+			<meta
+				name="twitter:image"
+				content="https://morava.lol/_next/static/media/mapa3.ca826749.jpg"
+			/>
+			<meta name="twitter:domain" content="https://morava.lol/" />
 		</Head>
 	);
 }
