@@ -19,8 +19,19 @@ function Meta(i: info) {
 			<meta charSet="utf-8" />
 			<link rel="icon" href="/favicon.ico" />
 			<meta name="author" content="divear" />
+			<meta content="Jak moc jsi moravák" property="og:title" />
+			<meta content="https://morava.lol" property="og:url" />
+			<meta content="../public/mapa.jpg" property="og:image" />
+			<meta
+				content="Zjisti, jak moc jsi z moravy"
+				property="og:description"
+			/>{" "}
+			<meta
+				content="#ff8000"
+				data-react-helmet="true"
+				name="theme-color"
+			/>
 			<title>{i.title}</title>
-
 			{/* twitter */}
 			<meta name="twitter:card" content="./mapa3.jpg" />
 			<meta name="twitter:title" content="Jak moc jsi moravák?" />
