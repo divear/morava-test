@@ -336,19 +336,25 @@ input {
 	position: fixed;
 	right: 1%;
 	top: 1%;
-	z-index: 99;
+	z-index: 6;
 }
 .info {
 	margin: 1vw;
 }
-.burgerModal {
+.burgerPar {
+	cursor: pointer;
 	position: fixed;
 	right: 1%;
 	top: 1%;
-	background-color: rgba(0, 0, 0, 0.62);
+	z-index: 5;
+}
+.burgerModal {
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.717);
 	padding: 5vh 1vw 1vw 1vw;
 	font-size: 3rem;
 	width: 10vw;
+	border-radius: 1vw;
 }
 
 /* mobile view */

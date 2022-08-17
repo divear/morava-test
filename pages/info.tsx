@@ -1,8 +1,10 @@
 import React from "react";
+import Meta from "../components/Meta";
 
 function Info() {
 	return (
 		<div className="blackbox center">
+			<Meta title="Info" />
 			<article>
 				<h1>Info a téhle stránce</h1>
 				<p className="info">
