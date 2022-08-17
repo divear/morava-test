@@ -26,6 +26,11 @@ function MyApp({ Component, pageProps }: AppProps) {
 	}, [router.events]);
 	return (
 		<>
+			<Script
+				async={true}
+				strategy="beforeInteractive"
+				src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3177879883146014"
+			/>
 			{/* Global Site Tag (gtag.js) - Google Analytics */}
 			<Script
 				strategy="afterInteractive"

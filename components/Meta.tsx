@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import Script from "next/script";
 
 interface info {
 	title: string;
@@ -11,11 +10,6 @@ interface info {
 function Meta(i: info) {
 	return (
 		<Head>
-			<Script
-				async={true}
-				strategy="beforeInteractive"
-				src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3177879883146014"
-			/>
 			<meta
 				name="viewport"
 				content="width=device-width, initial-scale=1"
