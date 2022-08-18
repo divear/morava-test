@@ -9,9 +9,14 @@ function BurgerModal() {
 				<br />
 				<Link href="/info">info</Link>
 				<br />
-				<Link href="https://github.com/lukascobit/morava-test">
+				<a
+					target="_blank"
+					href="https://github.com/lukascobit/morava-test"
+				>
 					github
-				</Link>
+				</a>
+				<br />
+				<Link href="/nove-otazky">nové</Link>
 			</div>
 		</div>
 	);

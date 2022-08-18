@@ -5,4 +5,4 @@
 Jednoduchý kvíz na zjíštění, _jak moc jsi z
 moravy._
 
-[Hrát](https://morava.netlify.app/)
+[Hrát](https://morava.lol)
