@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 	}, [router.events]);
 
 	useEffect(() => {
-		console.log("routechange");
+		setModal(false);
 	}, [router.asPath]);
 	return (
 		<>
