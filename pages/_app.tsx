@@ -24,6 +24,10 @@ function MyApp({ Component, pageProps }: AppProps) {
 			router.events.off("hashChangeComplete", handleRouteChange);
 		};
 	}, [router.events]);
+
+	useEffect(() => {
+		console.log("routechange");
+	}, [router.asPath]);
 	return (
 		<>
 			<Script

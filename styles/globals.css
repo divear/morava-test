@@ -434,4 +434,16 @@ input {
 	label {
 		font-size: 1.5rem;
 	}
+	.logo {
+		display: none;
+	}
+	.burgerModal {
+		position: relative;
+		background-color: rgba(0, 0, 0, 0.888);
+		padding: 5vh 1vw 6vh 1vw;
+		font-size: 4rem;
+		width: 99vw;
+		border-radius: 1vw;
+		text-align: center;
+	}
 }
