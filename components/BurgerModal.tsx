@@ -10,6 +10,7 @@ function BurgerModal() {
 				<Link href="/info">info</Link>
 				<br />
 				<a
+					rel="noreferrer"
 					target="_blank"
 					href="https://github.com/lukascobit/morava-test"
 				>
