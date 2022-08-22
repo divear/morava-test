@@ -339,7 +339,7 @@ input {
 	z-index: 6;
 }
 .info {
-	margin: 1vw;
+	margin: 5vw;
 }
 .burgerPar {
 	cursor: pointer;
@@ -355,6 +355,9 @@ input {
 	font-size: 3rem;
 	width: 10vw;
 	border-radius: 1vw;
+}
+.imgShrug {
+	width: 30vw;
 }
 
 /* mobile view */
