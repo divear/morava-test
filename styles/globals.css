@@ -33,6 +33,9 @@ p {
 button {
 	cursor: pointer;
 }
+h6 {
+	margin: 0;
+}
 .socialMedia {
 	position: fixed;
 	bottom: 0;
@@ -358,6 +361,9 @@ input {
 }
 .imgShrug {
 	width: 30vw;
+}
+.description {
+	color: var(--orf);
 }
 
 /* mobile view */

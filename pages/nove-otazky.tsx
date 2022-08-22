@@ -7,6 +7,8 @@ const db = getFirestore(app);
 function Otazky() {
 	const [question, setQuestion] = useState("");
 	const [answer, setAnswer] = useState(["", "", "", ""]);
+	const [isQuestionHover, setIsQuestionHover] = useState(false);
+	const [isAnswerHover, setIsAnswerHover] = useState(false);
 
 	const handleChange = (index: number, value: string) => {
 		const data = [...answer];
@@ -34,16 +36,28 @@ function Otazky() {
 
 			<h1 className="kvizHead">Přidej novou otázku do kvízu!</h1>
 
-			<label htmlFor="otazka">Otázka: </label>
-			<input
-				value={question}
-				onChange={(e) => setQuestion(e.target.value)}
-				type="text"
-				id="otazka"
-				placeholder="Odkuď jsi?"
-			/>
+			<div
+				className="otazkaPar"
+				onMouseEnter={() => setIsQuestionHover(!isQuestionHover)}
+			>
+				<label htmlFor="otazka">Otázka: </label>
+				<input
+					value={question}
+					onChange={(e) => setQuestion(e.target.value)}
+					type="text"
+					id="otazka"
+					placeholder="Odkuď jsi?"
+				/>
+			</div>
 
-			<div className="answersInput">
+			<h6 className={isQuestionHover ? "description" : "no"}>
+				Otázka by měla být neseriózní, stereotypní, ale hlavně vtipná
+				(proto tady jsme lol)
+			</h6>
+			<div
+				className="answersInput"
+				onMouseEnter={() => setIsAnswerHover(!isAnswerHover)}
+			>
 				<label htmlFor="">Odpověď pro Prahu: </label>{" "}
 				<input
 					value={answer[0]}
@@ -72,6 +86,12 @@ function Otazky() {
 					type="text"
 					placeholder="Ústí nad Labem"
 				/>
+				<h6 className={isAnswerHover ? "description" : "no"}>
+					Odpovědi by měli byt <u>krátké</u> a <u>vtipné</u>, mají
+					vystihovat, jak by člověk z daného města odpovědel na danou
+					otázku <br /> např. "Co jsi měl na snídani?" odpověd pro
+					Ústí by byla "Piko".
+				</h6>
 			</div>
 			<button onClick={addToDb}>Odeslat</button>
 		</div>
