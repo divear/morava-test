@@ -63,8 +63,44 @@
 			"a": ["Koho?", "ne", "jo", "Co?"]
 		},
 		{
-			"q": "Jaká je tvá oblíbená pohádka",
+			"q": "Jaká je tvá oblíbená pohádka?",
 			"a": ["Krteček", "Rakosníček", "nwm", "img"]
+		},
+		{
+			"q": "Kdy jsi měl na sobě naposledy stejnokroj?",
+			"a": [
+				"Pokud myslíš McDonald uniformu, tak včera",
+				"Mám ho na sobě",
+				"pár let už to bude...",
+				"co meleš, drž hubu lol"
+			]
+		},
+		{
+			"q": "Bagruješ v puluši šnicl?",
+			"a": [
+				"Jasnačka!",
+				"wtf?",
+				"ses posral pyčo?",
+				"nemel blbosti bráško"
+			]
+		},
+		{
+			"q": "Kolik máš párů bot?",
+			"a": [
+				"Na každou příležitost",
+				"jedny zimní, jedny letní",
+				"co to jsou \"boty\"?",
+				"jedny rodinné, ve středu jsem na řadě"
+			]
+		},
+		{
+			"q": "Líbil se ti tento test?",
+			"a": [
+				"Ne, byl urážlivý, xenofóbní a rasistický!",
+				"asi",
+				"Ne, málo rasismu",
+				"Ne, moc slov, nechce se mi číst"
+			]
 		}
 	],
 	"urls": [
