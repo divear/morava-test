@@ -21,7 +21,7 @@ function Meta(i: info) {
 			<link rel="icon" href="/favicon.ico" />
 			<meta name="author" content="divear" />
 			<meta
-				content="MorasvaTest - Jak moc jsi moravák?"
+				content="MoravaTest - Jak moc jsi moravák?"
 				property="og:title"
 			/>
 			<meta content="https://morava.lol" property="og:url" />
