@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import card from "../public/mapa3.jpg";
 
 interface info {
 	title: string;

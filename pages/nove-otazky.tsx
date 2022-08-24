@@ -89,8 +89,8 @@ function Otazky() {
 				<h6 className={isAnswerHover ? "description" : "no"}>
 					Odpovědi by měli byt <u>krátké</u> a <u>vtipné</u>, mají
 					vystihovat, jak by člověk z daného města odpovědel na danou
-					otázku <br /> např. "Co jsi měl na snídani?" odpověd pro
-					Ústí by byla "Piko".
+					otázku <br /> např. &#34;Co jsi měl na snídani?&#34; odpověd
+					pro Ústí by byla &#34;Piko&#34;.
 				</h6>
 			</div>
 			<button onClick={addToDb}>Odeslat</button>
