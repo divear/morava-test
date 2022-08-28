@@ -59,7 +59,7 @@ function Meta(i: info) {
 Meta.defaultProps = {
 	title: "Morava test",
 	keywords:
-		"morava, test, morava test, moravia, brno, praha, experiment, brün, Brno, Morava",
+		"morava,test,morava test,moravia,brno,praha,experiment,brün,Brno,Morava,lol,Lol,moravatest,morava.lol,moravia.lol,mora,kviz,Brün",
 	description: "Jak moc se chováš jako moravák?",
 };
 
