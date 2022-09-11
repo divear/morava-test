@@ -77,12 +77,7 @@
 		},
 		{
 			"q": "Bagruješ v puluši šnicl?",
-			"a": [
-				"Jasnačka!",
-				"wtf?",
-				"ses posral pyčo?",
-				"nemel blbosti bráško"
-			]
+			"a": ["Jasnačka!", "wtf?", "???", "nemel blbosti bráško"]
 		},
 		{
 			"q": "Kolik máš párů bot?",
@@ -94,12 +89,12 @@
 			]
 		},
 		{
-			"q": "Líbil se ti tento test?",
+			"q": "Názor na aktuální vládu?",
 			"a": [
-				"Ne, byl urážlivý, xenofóbní a rasistický!",
-				"asi",
-				"Ne, málo rasismu",
-				"Ne, moc slov, nechce se mi číst"
+				"Jsou urážlivý, xenofóbní a rasističtí!",
+				"politika🤮",
+				"málo rasismu",
+				"moc slov"
 			]
 		}
 	],
