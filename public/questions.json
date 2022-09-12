@@ -96,6 +96,10 @@
 				"málo rasismu",
 				"moc slov"
 			]
+		},
+		{
+			"q": "V kolik vztáváš?",
+			"a": ["v 10 ráno idk", "7:00", "4:00", "nikdy nespim😎"]
 		}
 	],
 	"urls": [
