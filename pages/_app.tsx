@@ -9,14 +9,14 @@ import Footer from "../components/Footer";
 import logo from "../public/moravaLogo.png";
 import burger from "../public/burger.png";
 import BurgerModal from "../components/BurgerModal";
-import { getAnalytics, app, logEvent } from "../components/firebase";
+import { analytics, logEvent } from "../components/firebase";
+
+logEvent(analytics, "opened");
 
 function MyApp({ Component, pageProps }: AppProps) {
 	const [modal, setModal] = useState(false);
 	const router = useRouter();
 	useEffect(() => {
-		const analytics = getAnalytics(app);
-		logEvent(analytics, "notification_received");
 		const handleRouteChange = (url: string) => {
 			gtag.pageview(url);
 		};
