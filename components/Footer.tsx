@@ -54,7 +54,7 @@ function Footer() {
 				>
 					<img
 						className="ytLogo"
-						src="https://gizmos.republica.com/files/2014/05/youtube-logo.jpg"
+						src="https://www.logolynx.com/images/logolynx/a0/a09d30b78b51bd1bfd6403019b1e5958.png"
 						alt="Youtube"
 					/>
 				</button>
