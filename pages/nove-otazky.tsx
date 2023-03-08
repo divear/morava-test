@@ -17,7 +17,7 @@ function Otazky() {
 	};
 
 	async function addToDb() {
-		try {
+	try {
 			const docRef = await addDoc(
 				collection(db, question.replaceAll("/", "")),
 				{
