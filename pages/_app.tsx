@@ -63,7 +63,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 			</div>
 			{/* burger menu */}
 			<div className="burger" onClick={() => setModal(!modal)}>
-				<Image src={burger} width={50} height={50}></Image>
+				<Image src={burger} width={50} height={50} alt="menu"></Image>
 			</div>
 			{/* links modal */}
 			<div className={modal ? "" : "no"}>
