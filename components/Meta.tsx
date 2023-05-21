@@ -30,7 +30,7 @@ function Meta(i: info) {
 			/>
 			<meta property="og:type" content="website" />
 			<meta
-				content="Zjisti, jak moc jsi z moravy"
+				content="Zjisti, jak moc jsi z Moravy"
 				property="og:description"
 			/>{" "}
 			<meta
@@ -44,7 +44,7 @@ function Meta(i: info) {
 			<meta name="twitter:title" content="Jak moc jsi moravák?" />
 			<meta
 				name="twitter:description"
-				content="Zjisti, jak moc jsi z moravy."
+				content="Zjisti, jak moc jsi z Moravy."
 			/>
 			<meta name="twitter:creator" content="@divear0" />
 			<meta
@@ -59,7 +59,7 @@ function Meta(i: info) {
 Meta.defaultProps = {
 	title: "Morava test",
 	keywords:
-		"morava,test,morava test,moravia,brno,praha,experiment,brün,Brno,Morava,lol,Lol,moravatest,morava.lol,moravia.lol,mora,kviz,Brün",
+		"Morava,xd,morava,test,morava test,moravia,brno,praha,experiment,brün,Brno,Morava,lol,Lol,moravatest,morava.lol,moravia.lol,mora,kviz,Brün",
 	description: "Jak moc se chováš jako moravák?",
 };
 
