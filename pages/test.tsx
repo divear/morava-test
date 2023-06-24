@@ -128,9 +128,9 @@ function Test() {
 	}
 	return (
 		<div>
-			<Meta title="Jak moc jsi moravák?" />
+			<Meta title="Jak moc jsi Moravák?" />
 			<div className="mapa">
-				<h1>{procent}% moravák</h1>
+				<h1>{procent}% Moravák</h1>
 				<canvas ref={canvasRef} width={width} height={height} />
 			</div>
 			<div className="blackbox answersBox">

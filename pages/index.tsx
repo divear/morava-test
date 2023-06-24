@@ -9,7 +9,7 @@ const Home: NextPage = () => {
 			<Meta title="Morava test" />
 			<div className="center blackbox">
 				<h1>Morava test,</h1>
-				<h2>jak moc jsi z moravy?</h2>
+				<h2>jak moc jsi z Moravy?</h2>
 				<button
 					onClick={() => (location.href = "/test")}
 					onMouseEnter={() => setOtazka("Vodkať sem?")}
