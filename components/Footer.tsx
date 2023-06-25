@@ -25,9 +25,7 @@ function Footer() {
 					/>
 				</button>
 				<button
-					onClick={() =>
-						open("https://github.com/lukascobit", "_blank")
-					}
+					onClick={() => open("https://github.com/divear", "_blank")}
 					style={{ backgroundColor: "#0d1117" }}
 					className="sb share"
 					data-size="large"
