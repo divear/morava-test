@@ -23,9 +23,9 @@ function Meta(i: info) {
 				content="MoravaTest - Jak moc jsi moravák?"
 				property="og:title"
 			/>
-			<meta content="https://morava.lol" property="og:url" />
+			<meta content="https://morava.netlify.app" property="og:url" />
 			<meta
-				content="https://morava.lol/_next/static/media/mapa3.ca826749.jpg"
+				content="https://morava.netlify.app/_next/static/media/mapa3.ca826749.jpg"
 				property="og:image"
 			/>
 			<meta property="og:type" content="website" />
