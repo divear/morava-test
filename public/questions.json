@@ -77,7 +77,11 @@
 		},
 		{
 			"q": "Bagruješ v puluši šnicl?",
-			"a": ["Jasnačka!", "wtf?", "???", "nemel blbosti bráško"]
+			"a": [
+        "wtf?",
+        "Jasnačka!", 
+        "Bagruju na stavbě leda", 
+        "*dá ti pěstí*"]
 		},
 		{
 			"q": "Kolik máš párů bot?",
